@@ -4,9 +4,10 @@
 
 #include <iostream>
 #include "C++Primer-2-practice/Cprimer2_1.h"
+#include "C++Primer-2-practice/Second.h"
 int main () {
     using namespace std;
-    CP_2_7_1();
+    long2ma();
     return 0;
 
 }
