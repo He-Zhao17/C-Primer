@@ -3,11 +3,11 @@
 //
 
 #include <iostream>
-#include "C++Primer-2-practice/Cprimer2_1.h"
-#include "C++Primer-2-practice/Second.h"
+
+#include "Prac3/One.h"
 int main () {
     using namespace std;
-    long2ma();
+    T_1();
     return 0;
 
 }
