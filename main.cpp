@@ -4,10 +4,10 @@
 
 #include <iostream>
 
-#include "Prac3/T_2.h"
+#include "Prac3/T_3.h"
 int main () {
     using namespace std;
-    T_2();
+    T_3();
     return 0;
 
 }
