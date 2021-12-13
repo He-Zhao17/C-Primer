@@ -101,3 +101,78 @@ Months = 12;           //Too late;
 int (x); // C++ 风格
 ```
 
+# 关于数组
+
+```c++
+int a[4] == {1,2,3,4}; // allowed 
+
+int a[4];
+a[4] = {1,2,3,4}; //not allowed
+```
+
+数组的初始化必须在声明时候做， 但是后续可以单独定义每一个元素。
+
+## 字符串
+
+C风格字符串必须用`\0` 结束， 如果没有这个， `cout` 会一直打印到内存中的`\0` 。
+
+```c++
+char ch1[] = "sadsadas";
+char ch1[4] = "ads"; 
+std::string ch1 = "ssss";
+```
+
+# 行读取
+
+```c++
+cin.getline(str1, 20) //存储在str1，数组长度20，可存19个字符
+```
+
+```c++
+cin.get(str1,20);
+cin.get();  //跳过最后的换行符
+cin.get(str2,10);
+//or
+cin.get(str1,20).get(str2.10);
+
+
+getline(cin, str1);
+```
+
+当遇到空行时，`cin.get()` 会设置失效位`fallbit` ，并阻断后续输出，可以使用
+
+```c++
+cin.clear();
+```
+
+来恢复输入。
+
+输入的字符串比空间长时，二者会把余下的字符留在输入队列中，`cin.getline()`还会设置失效位`fallbit`，关闭后续输入。
+
+
+
+# Struct结构
+
+```c++
+struct ball {
+	char[] name;
+	float volume;
+	double price;
+};
+
+
+ball ball1;
+```
+
+
+
+# Union共用体
+
+```c++
+union ball {
+	int int_val;
+	long long_val;
+	double double_val;
+}
+```
+
